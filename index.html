@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html class="h-full bg-gray-50" lang="en">
+  <title>Lavarages agency</title>
+  <head>
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lavarages is a digital agency specializing in stunning websites and online solutions for businesses. Contact us for custom designs, user-friendly experiences, and search engine optimization." />
+
+    <link async rel="stylesheet" href="asset/css/main.css" />
+    <script async src="asset/js/main.js"></script>
+    <link rel="preconnect" href="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" />
+    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11061704274"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-11061704274");
+    </script>
+
+    <script defer src="/_vercel/insights/script.js"></script>
+  </head>
+
+  <body class="h-full">
+
+    <!-- nav start -->
+      <div class="px-6 pt-6 lg:px-8 z-20">
+        <div>
+          <nav class="lg:fixed lg:inset-x-0 lg:top-0 lg:p-8 z-50 lg:px-4 transition flex h-9 items-center justify-between" id="navbar" aria-label="Global">
+            <div class="flex lg:pl-16 lg:min-w-0 lg:flex-1 justify-start" aria-label="Global">
+              <a href="../" class="-m-1.5 p-1.5">
+                <span class="sr-only">LAVARAGES</span>
+                <img class="w-8 h-8" src="asset/img/porto-images/lavarages-logo-ps.webp" alt="logo-lavarages" />
+              </a>
+            </div>
+            <div class="flex lg:hidden">
+              <button type="button" class="gotin -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" id="toogleOpenMenu">
+                <span class="sr-only">Open main menu</span>
+                <!-- Heroicon name: outline/bars-3 -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              </button>
+            </div>
+            <div class="hidden lg:flex lg:min-w-0 lg:flex-1 sm:justify-center lg:gap-x-12">
+              <a href="../" class="transition-all duration-500 ease-in-out hover:text-indigo-700 font-semibold text-gray-900">Home</a>
+
+              <a href="api/pages/service.php" class="transition-all duration-500 ease-in-out hover:text-indigo-700 font-semibold text-gray-900">Services</a>
+
+              <a href="api/pages/portofolio.php" class="transition-all duration-500 ease-in-out hover:text-indigo-700 font-semibold text-gray-900">Portofolio</a>
+
+              <a href="api/pages/about.php" class="transition-all duration-500 ease-in-out hover:text-indigo-700 font-semibold text-gray-900">About</a>
+
+              <a href="api/pages/contact.php" class="transition-all duration-500 ease-in-out hover:text-indigo-700 font-semibold text-gray-900">Contact</a>
+            </div>
+            <div class="hidden pr-16 lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+              <a href="https://wa.me/6281337180384?text=" class="transition-all duration-500 ease-in-out hover:bg-indigo-500 hover:text-white inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20">Disccuse Now!</a>
+            </div>
+          </nav>
+          <!-- Mobile menu, show/hide based on menu open state. -->
+          <div id="mobile-menu" style="display: none" role="dialog" aria-modal="true">
+            <div focus="true" class="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+              <div class="flex h-9 items-center justify-between">
+                <div class="flex">
+                  <a href="../" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Your Company</span>
+                    <img class="h-8" src="/asset/img/porto-images/lavarages-logo-ps.webp" alt="lavarages-logo-ps" />
+                  </a>
+                </div>
+                <div class="flex">
+                  <button type="button" class="gotin -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" id="toogleCloseMenu">
+                    <span class="sr-only">Close menu</span>
+                    <!-- Heroicon name: outline/x-mark -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                  <div class="space-y-2 py-6">
+                    <a href="../" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Home</a>
+
+                    <a href="../api/pages/service.php" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Services</a>
+
+                    <a href="../api/pages/portofolio.php" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Portofolio</a>
+
+                    <a href="../api/pages/about.php" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">About</a>
+
+                    <a href="../api/pages/contact.php" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Contact Us</a>
+                  </div>
+                  <div class="py-6">
+                    <a href="https://wa.me/6281337180384?text=" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">Chat With us Now!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- nav end -->
+
+    <div class="isolate bg-white z-20">
+      <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+        <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+          <defs>
+            <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#9089FC"></stop>
+              <stop offset="1" stop-color="#FF80B5"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      
+      <main>
+        <div class="relative px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl pt-20 pb-32 sm:pt-20 sm:pb-40">
+            <div>
+              <div class="animate-bounce hidden sm:mb-8 sm:flex sm:justify-center">
+                <div class="relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                  <span class="text-gray-600">
+                    Build for Enterprise.
+                    <a href="/pages/enterprise.html" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                  </span>
+                </div>
+              </div>
+              <div class="text-center pb-12 md:pb-16 p-4">
+                <h1 class="text-5xl md:text-8xl font-extrabold leading-tighter tracking-tighter mb-4">
+                  Make your websitess
+                  <br />
+                  <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">wonderful</span>
+                </h1>
+                <div class="max-w-3xl mx-auto">
+                  <p class="font-semibold text-xl text-gray-600 mb-8">We don't Just Design, We Craft Your Identitiy.</p>
+                  <div class="pt-4 max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
+                    <div>
+                      <a class="transition ease-in-out delay-150 hover:bg-gradient-to-r hover:from-blue-500 to-teal-400 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 btn p-4 rounded-xl font-bold text-white bg-gray-900 w-full sm:w-auto sm:ml-4" href="https://wa.me/6281337180384?text="> Disccuse Now! </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+                <svg class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+                  <defs>
+                    <linearGradient id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#9089FC"></stop>
+                      <stop offset="1" stop-color="#FF80B5"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- section 1 -->
+
+    <div class="border-t-2 flex flex-col content-center justify-center text-center">
+      <div class="mt-5 sm:text-center p-4 pb-4">
+        <h2 class="text-lg font-semibold leading-8 text-indigo-600">Lavarages</h2>
+        <p class="mt-2 lg:text-6xl xxs:text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Services</p>
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">Partner with us to take your business to the next level with our highly specialized service, we will help you grow and expand your business. Experience increased success and reach new heights in your industry.</p>
+      </div>
+    </div>
+
+    <!-- new Service -->
+    <div class="sm:flex sm:flex-row xxs:flex-col xxs:flex justify-evenly text-center p-11 gap-5">
+      <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Web Developer</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700">We're ready to help you rock your online presence! With our expertise, you'll see conversions soar and your business reach new heights.</p>
+        <a href="../pages/service.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-500 rounded-lg hover:bg-black focus:ring-4 focus:outline-none">
+          See Our Service
+          <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Logo Design</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700">Our team of experts is ready to create a logo that'll be the face of your brand, and help your business reach new heights.</p>
+        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-500 rounded-lg hover:bg-black focus:ring-4 focus:outline-none">
+          See Our Service
+          <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Digital Ads</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700">Looking for a digital ad campaign that's as unique as your brand? Our professional team will design one that'll make your business blast off!.</p>
+        <a href="pages/digital-ads-service.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-indigo-500 rounded-lg hover:bg-black focus:ring-4 focus:outline-none">
+          See Our Service
+          <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- end new service -->
+
+    <!-- <div class="justify-center flex-col flex pb-4">
+      <div class="flex flex-row p-10 min-[320px]:p-0 max-[600px]:p-0 md:p-10 lg:px-36 lg:py-6 pb-0">
+        <div class="flex m-5">
+          <div class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white sm:shrink-0">
+              <div class="p-3">
+                <img class="icon-section w-12 h-6" src="asset/img/icon/group_FILL0_wght300_GRAD-25_opsz48.svg" alt="team-icon" style="filter: invert(1)" loading="lazy" />
+              </div>
+            </div>
+            <div class="sm:min-w-0 sm:flex-1">
+              <p class="text-lg font-semibold leading-8 text-gray-900">Expertise</p>
+              <p class="mt-2 text-base leading-7 text-gray-600">Our team of world-class developers has the knowledge and skills to bring your vision to life, no matter how complex or ambitious it may be.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex m-5">
+          <div class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white sm:shrink-0">
+              <div class="p-3">
+                <img class="icon-section w-12 h-6" src="asset/img/icon/devices_FILL0_wght300_GRAD-25_opsz48.svg" alt="reponsive-icon" style="filter: invert(1)" loading="lazy" />
+              </div>
+            </div>
+            <div class="sm:min-w-0 sm:flex-1">
+              <p class="text-lg font-semibold leading-8 text-gray-900">Responsive Design</p>
+              <p class="mt-2 text-base leading-7 text-gray-600">We create websites that are nothing short of stunning and function flawlessly on all devices, ensuring a jaw-dropping user experience for your visitors.</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <!-- break -->
+    <!-- <div class="flex flex-row p-10 min-[320px]:p-0 max-[600px]:p-0 md:p-10 lg:px-36 lg:pt- pb-0">
+        <div class="flex m-5 md:basis-1/2">
+          <div class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white sm:shrink-0">
+              <div class="p-3">
+                <img class="icon-section w-12 h-6" src="asset/img/icon/bolt-lightning-solid.svg" alt="ligtning-icon" style="filter: invert(1)" loading="lazy" />
+              </div>
+            </div>
+            <div class="sm:min-w-0 sm:flex-1">
+              <p class="text-lg font-semibold leading-8 text-gray-900">Page Speed Optimization</p>
+              <p class="mt-2 text-base leading-7 text-gray-600">Our developers know how to optimize your website's loading speed, ensuring that your site loads quickly and smoothly for all users.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex m-5 md:basis-1/2">
+          <div class="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white sm:shrink-0">
+              <div class="p-3">
+                <img class="icon-section w-12 h-6" src="asset/img/icon/gear-solid.svg" alt="gear-icon" style="filter: invert(1)" loading="lazy" />
+              </div>
+            </div>
+            <div class="sm:min-w-0 sm:flex-1">
+              <p class="text-lg font-semibold leading-8 text-gray-900">Customization</p>
+              <p class="mt-2 text-base leading-7 text-gray-600">We offer custom website development that will blow your mind, meeting your specific needs and preferences down to the smallest detail, ensuring that your site reflects your brand and values like no other.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Section 3 -->
+    <div class="bg-white border-t-2 flex flex-col md:flex-row content-center justify-center">
+      <div class="basis-1/2 flex flex-col sm:pt-10 sm:p-2">
+        <div class="xxs:pt-4 font-extrabold xs:text-center xs:text-2xl xs:pt-3 sm:text-left sm:px-8 sm:text-4xl lg:text-6xl pb-4 min-[320px]:text-2xl max-[600px]:text-2xl xxs:text-center">
+          We make the rules. And they
+          <span class="text-indigo-500">sell</span>
+          well
+        </div>
+        <div class="sm:px-8 pb-4 xs:p-4 text-lg xxs:px-5">Don't just follow the rules – create them. At our digital agency, we pride ourselves on pushing boundaries and crafting innovative solutions that drive success and generate impressive returns on investment. Trust us to lead the way and make your online presence a success.</div>
+        <div class="button justify-center flex py-9">
+          <button class="xxs:p-5 animate-bounce flex w-42 font-bold text-center text-indigo-800 text-base">
+            <a href="https://wa.me/6281337180384?text=" class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd" />
+                <path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z" />
+              </svg>
+              Create Your Website and start Selling Now!
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <div class="basis-1/2 flex items-center justify-center">
+        <lottie-player src="https://lottie.host/0771c506-1ed6-412a-81ab-d1b209358647/LPH9TQVMsl.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></lottie-player>
+
+        <!-- <img class="w-auto h-50" src="https://i0.wp.com/cdn.dribbble.com/users/2594111/screenshots/14257316/media/3759c97d6a698ceb65a692dc266bef7c.jpg?resize=551%2C413&ssl=1" alt="image" /> -->
+      </div>
+    </div>
+
+    <!-- section 4 -->
+
+    <div class="bg-white border-t-0 flex xxs:flex-col-reverse sm:flex-col md:flex-row content-center justify-center">
+      <div class="basis-1/2 flex flex-col sm:pt-10 sm:p-2 justify-center">
+        <div class="flex">
+          <img class="w-full h-auto object-cover" widht="700" height="500" loading="lazy" src="asset/img/porto-images/lavarages-pagespeed-100.webp" alt="lavarages-pagespeed" />
+        </div>
+      </div>
+
+      <div class="basis-1/2 flex flex-col sm:pt-10 sm:p-2">
+        <div class="xxs:pt-4 font-extrabold xs:text-center xs:text-2xl xs:pt-3 sm:text-left sm:px-8 sm:text-4xl lg:text-6xl pb-4 min-[320px]:text-2xl max-[600px]:text-2xl xxs:text-center">
+          Deliver with<br />
+          <span class="text-indigo-500">incridible</span>
+          Performace
+        </div>
+        <div class="sm:px-8 pb-4 xs:p-4 text-lg xxs:px-5">We improves website performance and provides a better visitor experience through high Google Page Speed scores.</div>
+        <div class="button justify-center flex py-9">
+          <button class="xxs:p-5 animate-bounce flex w-42 font-bold text-center text-indigo-800 text-base">
+            <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Flavarages.com%2F&form_factor=desktop" class="flex">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M9.315 7.584C12.195 3.883 16.695 1.5 21.75 1.5a.75.75 0 01.75.75c0 5.056-2.383 9.555-6.084 12.436A6.75 6.75 0 019.75 22.5a.75.75 0 01-.75-.75v-4.131A15.838 15.838 0 016.382 15H2.25a.75.75 0 01-.75-.75 6.75 6.75 0 017.815-6.666zM15 6.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd" />
+                <path d="M5.26 17.242a.75.75 0 10-.897-1.203 5.243 5.243 0 00-2.05 5.022.75.75 0 00.625.627 5.243 5.243 0 005.022-2.051.75.75 0 10-1.202-.897 3.744 3.744 0 01-3.008 1.51c0-1.23.592-2.323 1.51-3.008z" />
+              </svg>
+              See Proof!
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Section 5 -->
+
+    <section class="relative border-t-2">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="py-12 md:py-20">
+          <div class="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+            <h2 class="h2 text-4xl font-bold mb-4">Trusted over a hundred companies all over the world</h2>
+            <p class="text-xl text-gray-600 aos-init aos-animate" data-aos="zoom-y-out">Your brand deserve a better website, and your customer deserve a better website performance. This a win win Solution</p>
+          </div>
+          <div class="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5">
+            <div class="flex items-center justify-center py-2 col-span-2 md:col-auto">
+              <img class="max-w-full fill-current text-gray-400" width="124" height="24" src="asset/img/client-logo/buddhawear.webp" loading="lazy" alt="buddhawear.svg" />
+            </div>
+            <div class="flex items-center justify-center py-2 col-span-2 md:col-auto">
+              <img class="max-w-full fill-current text-gray-400" width="124" height="24" src="asset/img/client-logo/island-threads.webp" loading="lazy" alt="island-threads.webp" />
+            </div>
+            <div class="flex items-center justify-center py-2 col-span-2 md:col-auto">
+              <img class="max-w-full fill-current text-gray-400" width="124" height="24" src="asset/img/client-logo/sowaka.webp" loading="lazy" alt="island-threads.webp" />
+            </div>
+            <div class="flex items-center justify-center py-2 col-span-2 md:col-auto">
+              <img class="invert-[50%] max-w-full fill-current text-gray-400" width="124" height="24" src="asset/img/client-logo/gajihub-logo-white.svg" loading="lazy" alt="buddhawear.svg" />
+            </div>
+            <div class="flex items-center justify-center py-2 col-span-2 md:col-auto col-start-2 col-end-4">
+              <img class="invert-[50%] max-w-full fill-current text-gray-400" width="124" height="24" src="asset/img/client-logo/grinders.webp" loading="lazy" alt="buddhawear.svg" />
+            </div>
+          </div>
+          <div class="max-w-3xl mx-auto mt-20 aos-init aos-animate" data-aos="zoom-y-out">
+            <div class="relative flex items-start border-2 border-gray-200 rounded bg-white">
+              <div class="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
+                <div class="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
+                  <img class="relative rounded-full" src="asset/img/testimonial.jpg" width="96" height="96" alt="Testimonial 01" loading="lazy" />
+                </div>
+                <blockquote class="text-xl font-medium mb-4">“No other digital agency has been as helpful and professional as Lavarages. They created a custom website that perfectly reflects my brand and values. Highly recommend.“</blockquote>
+                <cite class="block font-bold text-lg not-italic mb-1">Jim Darya</cite>
+                <div class="text-gray-600">
+                  <span>CEO &amp; Co-Founder</span>
+                  <a class="text-blue-600 hover:underline" href="#">@grinders-coffe</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq section -->
+    <div class="section bg-white p-12">
+      <div class="lg:px-32 xxs:px-7 pb-14 " id="accordion-collapse" data-accordion="collapse">
+        <h2>
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black border border-gray-200 rounded-t-xl focus:ring-4" data-accordion-target="accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1" onclick="accordionCollapse(this)">
+            <span data-accordion-target="accordion-collapse-body-1">What services we offer?</span>
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+          <div class="p-5 font-light text-black border-gray-200 bg-gray-00">
+            <p class="mb-2 text-black">Lavarages offers a range of digital services, including website design and development to search engine optimization (SEO).</p>
+          </div>
+        </div>
+        <h2>
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black border border-b-0 border-gray-200" data-accordion-target="accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2" onclick="accordionCollapse(this)">
+            <span data-accordion-target="accordion-collapse-body-2">How much do Lavarages' services cost?</span>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+          <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-200">
+            <p class="mb-2 text-black">The cost of our services depends on the specific project and its requirements. We can provide a detailed quote upon request.</p>
+          </div>
+        </div>
+        <h2>
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black border border-b-0 border-gray-200" data-accordion-target="accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3" onclick="accordionCollapse(this)">
+            <span data-accordion-target="accordion-collapse-body-3">How if only have a tight budget?</span>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+          <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-200">
+            <p class="mb-2 text-black">Don't worry about having a tight budget. We can still meet your needs and provide a high-quality website. We value all of our clients and will do our best to help you..</p>
+          </div>
+        </div>
+        <h2>
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-black border border-gray-200" data-accordion-target="accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4" onclick="accordionCollapse(this)">
+            <span data-accordion-target="accordion-collapse-body-4">How long does it take for Lavarages to design a website?</span>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+          <div class="p-5 font-light border border-t-0 border-gray-200">
+            <p class="mb-2 text-black">The timeline for website design and development can vary depending on the complexity of the project. We will provide an estimated timeline upon starting the project and work to meet your deadlines.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section 5 -->
+    <section class="relative border-t-2">
+      <div class="bg-white">
+        <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="block">Ready to make a splash in the digital world?</span>
+            <span class="block text-indigo-600">Disccuse with us Now!</span>
+          </h2>
+          <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0 xxs:justify-center md:justify-start">
+            <div class="inline-flex rounded-md shadow">
+              <a href="https://wa.me/6281337180384?text=" class="inline-flex items-center justify-center rounded-md border border-transparent hover:bg-indigo-500 px-5 py-3 text-base font-medium text-white bg-black">Chat Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content End -->
+    <footer aria-label="Site Footer" class="bg-gray-900">
+      <div class="max-w-screen-xl px-4 pt-16 pb-8 mx-auto sm:px-6 lg:px-8 lg:pt-24">
+        <div class="text-center">
+          <div class="text-3xl font-extrabold text-white sm:text-5xl">Take Your Own Brand Online</div>
+
+          <p class="max-w-sm mx-auto mt-4 text-gray-400">Don't be shy, just drop us a message and let's get to know each other! We're loved to make new friends and discuss how we can help bring your business.</p>
+
+          <a href="https://wa.me/6281337180384?text=" class="inline-block px-12 py-3 mt-8 text-sm font-medium bg-indigo-600 border border-indigo-600 rounded-full hover:bg-white hover:text-indigo-500 text-white focus:outline-none focus:ring active:bg-indigo-500"> Chat Now! </a>
+        </div>
+
+        <div class="pt-8 mt-16 border-t border-gray-700 sm:flex sm:items-center sm:justify-center lg:mt-24">
+          <nav aria-label="Footer Navigation - Support">
+            <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
+              <!-- <li>
+                <a href="#" class="text-gray-500 transition hover:opacity-75 dark:text-gray-400"> Terms & Conditions </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-gray-500 transition hover:opacity-75 dark:text-gray-400"> Privacy Policy </a>
+              </li> -->
+
+              <li>
+                <a href="#" class="text-gray-400 transition hover:opacity-75"> Copyright © 2023 All rights reserved by Lavarages Digital Agencies</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

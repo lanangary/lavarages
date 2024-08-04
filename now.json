@@ -1,0 +1,31 @@
+{
+  "routes": [
+    {
+      "src": "/api/pages/(.*)",
+      "dest": "/api/pages/about.php/$1"
+    }
+  ],
+  "functions": {
+    "api/pages/about.php": {
+      "runtime": "vercel-php@0.5.2"
+    },
+    "api/pages/contact.php": {
+      "runtime": "vercel-php@0.5.2"
+    },
+    "api/pages/digital-ads-service.php": {
+      "runtime": "vercel-php@0.5.2"
+    },
+    "api/pages/enterprise.php": {
+      "runtime": "vercel-php@0.5.2"
+    },
+    "api/pages/formSucces.php": {
+      "runtime": "vercel-php@0.5.2"
+    },
+    "api/pages/portofolio.php": {
+      "runtime": "vercel-php@0.5.2"
+    },
+    "api/pages/service.php": {
+      "runtime": "vercel-php@0.5.2"
+    }
+  }
+}

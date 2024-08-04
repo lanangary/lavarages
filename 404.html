@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script async src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="asset/css/404.css" />
+    <script defer src="asset/js/main.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11061704274"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-11061704274");
+    </script>
+  </head>
+  <body>
+    <div class="px-6 pt-6 lg:px-8 z-10">
+      <div>
+        <div class="px-6 pt-6 lg:px-8 z-20">
+          <div>
+            <nav class="lg:fixed lg:inset-x-0 lg:top-0 lg:p-8 z-50 lg:px-4 transition flex h-9 items-center justify-between" id="navbar" aria-label="Global">
+              <div class="flex lg:pl-16 lg:min-w-0 lg:flex-1 justify-center" aria-label="Global">
+                <a href="../" class="-m-1.5 p-1.5">
+                  <span class="sr-only">LAVARAGES</span>
+                  <img class="w-8 h-8" src="asset/img/porto-images/lavarages-logo-ps.png" alt="Lanang ary" />
+                </a>
+              </div>
+              <div class="flex lg:hidden">
+                <button onclick="toggleMenu()" type="button" class="gotin -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Open main menu</span>
+                  <!-- Heroicon name: outline/bars-3 -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                </button>
+              </div>
+              <div class="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
+                <a href="../pages/portofolio.html" class="transition-all duration-500 ease-in-out hover:text-indigo-700 font-semibold text-gray-900">Portofolio</a>
+
+                <a href="../" class="transition-all duration-500 ease-in-out hover:text-indigo-700 font-semibold text-gray-900">Home</a>
+
+                <a href="../pages/about.html" class="transition-all duration-500 ease-in-out hover:text-indigo-700 font-semibold text-gray-900">About</a>
+              </div>
+              <div class="hidden pr-16 lg:flex lg:min-w-0 lg:flex-1 lg:justify-center">
+                <a
+                  href="https://wa.me/6281337180384?text="
+                  class="transition-all duration-500 ease-in-out hover:bg-indigo-500 hover:text-white inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+                  >Disccuse Now!</a
+                >
+              </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div id="mobile-menu" style="display: none" role="dialog" aria-modal="true">
+              <div focus="true" class="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+                <div class="flex h-9 items-center justify-between">
+                  <div class="flex">
+                    <a href="../" class="-m-1.5 p-1.5">
+                      <span class="sr-only">Your Company</span>
+                      <img class="h-8" src="/asset/img/porto-images/lavarages-logo-ps.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="flex">
+                    <button type="button" onclick="toggleMenu()" class="gotin -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                      <span class="sr-only">Close menu</span>
+                      <!-- Heroicon name: outline/x-mark -->
+                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-6 flow-root">
+                  <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                      <a href="../pages/portofolio.html" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Portofolio</a>
+
+                      <a href="../pages/about.html" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">About</a>
+
+                      <a href="../" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Home</a>
+                    </div>
+                    <div class="py-6">
+                      <a href="https://wa.me/6281337180384?text=" class="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10">Chat With us Now!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end nav -->
+
+    <div class="grid grid-cols-3 gap-4 place-items-center p-24">
+      <div></div>
+      <div>
+        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ukmmbtae.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></lottie-player>
+        <div class="font-extrabold text-9xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 to-pink-500 text-center">404</div>
+        <div class="pt-6 font-semibold text-xl text-center">Whoops... We think you fell off the path</div>
+        <div class="pt-4 max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center aos-init aos-animate" data-aos="zoom-y-out" data-aos-delay="300">
+          <div class="pt-8 text-center">
+            <a class="hover:bg-gradient-to-r hover:from-indigo-700 to-orange-600 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 btn p-4 rounded-xl font-bold text-white bg-gray-900 w-full sm:w-auto sm:ml-4" href="https://lavarages.com/"> Let's Go Home! </a>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+
+    <!-- Content End -->
+    <footer aria-label="Site Footer" class="bg-gray-900">
+      <div class="max-w-screen-xl px-4 pt-16 pb-8 mx-auto sm:px-6 lg:px-8 lg:pt-24">
+        <div class="text-center">
+          <div class="text-3xl font-extrabold text-white sm:text-5xl">Want to Know More About Us?</div>
+
+          <p class="max-w-md mx-auto mt-4 text-gray-500 dark:text-gray-400">Don't be shy, just drop us a message and let's get to know each other! We're loved to make new friends and discuss how we can help bring your business.</p>
+
+          <a
+            href="https://www.linkedin.com/in/i-gusti-lanang-ary-kresnawan-0519b8156/"
+            class="inline-block px-12 py-3 mt-8 text-sm font-medium bg-indigo-600 border border-indigo-600 rounded-full hover:bg-white hover:text-indigo-500 text-white focus:outline-none focus:ring active:bg-indigo-500">
+            Let's be Friends
+          </a>
+        </div>
+
+        <div class="pt-8 mt-16 border-t border-gray-700 sm:flex sm:items-center sm:justify-center lg:mt-24">
+          <nav aria-label="Footer Navigation - Support">
+            <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
+              <li>
+                <a href="#" class="text-gray-400 transition hover:opacity-75"> Copyright © 2023 All rights reserved by Lavarages Digital Agencies</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<!--Form Code-->
